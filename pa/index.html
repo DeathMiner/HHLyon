@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HH LYON</title>
+		<meta charse="utf-8">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="theme-color" content="#3F51B5">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:300,400,500,700" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" type="text/css" href="/mdl/material.css">
+		<link rel="stylesheet" type="text/css" href="/css/custom.css">
+		<style type="text/css">
+			#home-pa{
+				padding:0;
+			}
+			#home-pa .buttons{
+				margin-bottom:16px;
+				overflow: hidden;
+			}
+			#home-pa .buttons a {
+			    display: block;
+			    width: 25%;
+			    float: left;
+			    text-decoration: none;
+			    color: rgba(0, 0, 0, .8);
+			    text-align: center;
+				position: relative;
+				padding: 8px 0;
+				font-size: 20px;
+    			font-weight: 300;
+			}
+
+			#home-pa .buttons a .icon{
+				font-size: 42px;
+    			line-height: 84px;
+			}
+
+			#home-pa .buttons a .icon img{
+				width:64px;
+				height:64px;
+				border-radius: 100%;
+			}
+
+			#home-pa .mdl-grid .mdl-card{
+				width:100%;
+			}
+			#home-pa .mdl-grid .mdl-card h2{
+				font-size:150%;
+			}
+			#home-pa .mdl-grid .mdl-card h2 small{
+				display: inline-block;
+				vertical-align: middle;
+				margin-left:10px;
+				line-height: 28px;
+			}
+			#home-pa .mdl-grid .mdl-card .mdl-card--border{
+				border-top:rgba(0,0,0,.1) 1px solid;
+				width:100%;
+			}
+			#msgs a{
+				position: relative;
+				text-decoration: none;
+			}
+			#msgs img{
+				float:left;
+				margin-right:16px;
+				width:64px;
+				height:64px;
+				border-radius: 100%;
+			}
+			#msgs .wrap{
+				overflow: hidden;
+			}
+			#msgs h3{
+				font-size:24px;
+				font-weight: 300;
+				margin: 0;
+			}
+			#msgs p{
+				margin: 0;
+			}
+			#online a{
+				position: relative;
+				text-decoration: none;
+				text-align: center;
+				font-size:20px;
+				font-weight: 300;
+			}
+			#online img{
+				width:64px;
+				height:64px;
+				border-radius: 100%;
+				display:block;
+				margin:0 auto;
+				margin-bottom:8px;
+			}
+			@media screen and (max-width: 1024px){
+				#home-pa .buttons a{
+					width:50%;
+				}
+				.mdl-grid .mdl-cell{
+					width:100%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-drawer-button">
+			<header class="mdl-layout__header" id="header">
+				<div class="mdl-layout-icon"></div>
+				<div class="mdl-layout__header-row">
+					<span class="mdl-layout__title">Ma résidence</span>
+					<div class="mdl-layout-spacer"></div>
+				</div>
+			</header>
+			<main class="mdl-layout__content" id="home-pa">
+				<div class="buttons">
+					<a href="#" class="mdl-js-ripple-effect">
+						<div class="icon"><img src="/img/avatar-1.png"></div>
+						<span class="text">Profil</span>
+						<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+					</a>
+					<a href="#" class="mdl-js-ripple-effect">
+						<div class="icon">👩</div>
+						<span class="text">Contacter la maîtresse de maison</span>
+						<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+					</a>
+					<a href="#" class="mdl-js-ripple-effect">
+						<div class="icon">🏪</div>
+						<span class="text">Services</span>
+						<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+					</a>
+					<a href="#" class="mdl-js-ripple-effect">
+						<div class="icon">ℹ️</div>
+						<span class="text">Infos diverses</span>
+						<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+					</a>
+				</div>
+				<div class="mdl-grid">
+					<div class="mdl-cell mdl-cell--2-col">
+						<div class="mdl-card mdl-shadow--2dp" id="online">
+							<div class="mdl-card__title">
+								<h2 class="mdl-card__title-text">En ligne</h2>
+							</div>
+							<a href="#" class="mdl-card__supporting-text mdl-card--border mdl-js-ripple-effect">
+								<img src="/img/avatar-2.png">
+								Suzanne
+								<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+							</a>
+							<a href="#" class="mdl-card__supporting-text mdl-card--border mdl-js-ripple-effect">
+								<img src="http://placehold.it/64x64">
+								Malika
+								<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+							</a>
+							<a href="#" class="mdl-card__supporting-text mdl-card--border mdl-js-ripple-effect">
+								<img src="http://placehold.it/64x64">
+								Roger
+								<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+							</a>
+						</div>
+					</div>
+					<div class="mdl-cell mdl-cell--6-col">
+						<div class="mdl-card mdl-shadow--2dp" id="msgs">
+							<div class="mdl-card__title">
+								<h2 class="mdl-card__title-text">Messages</h2>
+							</div>
+							<a href="#" class="mdl-card__supporting-text mdl-card--border mdl-js-ripple-effect">
+								<img src="/img/avatar-2.png">
+								<div class="wrap">
+									<h3>Suzanne</h3>
+									<p>Ca vous dit de boire un café cet après-midi à 16H ?</p>
+								</div>
+								<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+							</a>
+							<a href="#" class="mdl-card__supporting-text mdl-card--border mdl-js-ripple-effect">
+								<img src="/img/avatar-3.png">
+								<div class="wrap">
+									<h3>Michel</h3>
+									<p>Tu devineras jamais que je suis allé voir hier...</p>
+								</div>
+								<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+							</a>
+							<a href="#" class="mdl-card__supporting-text mdl-card--border mdl-js-ripple-effect">
+								<img src="http://placehold.it/64x64">
+								<div class="wrap">
+									<h3>Anne</h3>
+									<p>N'aurais pas tu besoin de légumes ? Je viens de récolter mon potager, si tu en veux, n'hésite pas à passer nous voir !</p>
+								</div>
+								<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+							</a>
+						</div>
+					</div>
+					<div class="mdl-cell mdl-cell--4-col">
+						<div class="mdl-card mdl-shadow--2dp">
+							<div class="mdl-card__title">
+								<h2 class="mdl-card__title-text">Aujourd'hui <small>Dimanche 20 Novembre</small></h2>
+							</div>
+							<div class="mdl-card__supporting-text mdl-card--border">
+								⛅ Nuageux, 13°C
+							</div>
+							<div class="mdl-card__supporting-text mdl-card--border">
+								Anniversaire de Malika 🎂
+							</div>
+							<div class="mdl-card__supporting-text mdl-card--border">
+								Scrabble à 15h
+							</div>
+							<div class="mdl-card__supporting-text mdl-card--border">
+								Sortie au musée d'art contemporain
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+		<script type="text/javascript" src="/mdl/material.js"></script>
+	</body>
+</html>
+<!--<!DOCTYPE html>
+<html>
+	<head>
+		<title>HH LYON</title>
+		<meta charse="utf-8">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="theme-color" content="#3F51B5">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:300,400,500,700" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" type="text/css" href="/mdl/material.css">
+		<link rel="stylesheet" type="text/css" href="/css/custom.css">
+		<style type="text/css">
+			#home-pa a {
+			    display: block;
+			    width: 50%;
+			    float: left;
+			    text-decoration: none;
+			    color: rgba(0, 0, 0, .8);
+			    text-align: center;
+				position: relative;
+				padding: 8px 0;
+			}
+
+			#home-pa a .icon{
+				font-size: 42px;
+    			line-height: 84px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-drawer-button">
+			<header class="mdl-layout__header" id="header">
+				<div class="mdl-layout-icon"></div>
+				<div class="mdl-layout__header-row">
+					<span class="mdl-layout__title">Ma résidence</span>
+					<div class="mdl-layout-spacer"></div>
+				</div>
+			</header>
+			<main class="mdl-layout__content" id="home-pa">
+				<a href="#" class="mdl-js-ripple-effect">
+					<div class="icon">😇</div>
+					<span class="text">:innocent:</span>
+					<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+				</a>
+				<a href="#" class="mdl-js-ripple-effect">
+					<div class="icon">🙃</div>
+					<span class="text">:upside_down:</span>
+					<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+				</a>
+				<a href="#" class="mdl-js-ripple-effect">
+					<div class="icon">🤜</div>
+					<span class="text">:right_facing_fist:</span>
+					<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+				</a>
+				<a href="#" class="mdl-js-ripple-effect">
+					<div class="icon">👌</div>
+					<span class="text">:ok_hand:</span>
+					<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+				</a>
+			</main>
+		</div>
+		<script type="text/javascript" src="/mdl/material.js"></script>
+	</body>
+</html>-->

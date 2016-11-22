@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HH LYON</title>
+		<meta charse="utf-8">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="theme-color" content="#3F51B5">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:300,400,500,700" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" type="text/css" href="/mdl/material.css">
+		<link rel="stylesheet" type="text/css" href="/css/custom.css">
+		<style type="text/css">
+			#home-g{
+				padding:0;
+			}
+			#home-g .buttons{
+				margin-bottom:16px;
+				overflow: hidden;
+			}
+			#home-g .buttons a {
+			    display: block;
+			    width: 25%;
+			    float: left;
+			    text-decoration: none;
+			    color: rgba(0, 0, 0, .8);
+			    text-align: center;
+				position: relative;
+				padding: 8px 0;
+				font-size: 20px;
+    			font-weight: 300;
+			}
+
+			#home-g .buttons a .icon{
+				font-size: 42px;
+    			line-height: 84px;
+			}
+
+			#home-g .buttons a .icon img{
+				width:64px;
+				height:64px;
+				border-radius: 100%;
+			}
+
+			#home-g .mdl-grid .mdl-card{
+				width:100%;
+				margin-bottom:16px;
+			}
+			#home-g .mdl-grid .mdl-card h2{
+				font-size:150%;
+			}
+			#home-g .mdl-grid .mdl-card h2 small{
+				display: inline-block;
+				vertical-align: middle;
+				margin-left:10px;
+				line-height: 28px;
+			}
+			#home-g .mdl-grid .mdl-card .mdl-card--border{
+				border-top:rgba(0,0,0,.1) 1px solid;
+				width:100%;
+			}
+			.alerts a{
+				position: relative;
+				text-decoration: none;
+			}
+			.alerts img{
+				float:left;
+				margin-right:16px;
+				width:64px;
+				height:64px;
+				border-radius: 100%;
+			}
+			.alerts .wrap{
+				overflow: hidden;
+			}
+			.alerts h3{
+				font-size:24px;
+				font-weight: 300;
+				margin: 0;
+			}
+			.alerts p{
+				margin: 0;
+			}
+			.alerts.red{
+				background:#FFCDD2;
+			}
+			.alerts.orange{
+				background:#FFE0B2;
+			}
+			@media screen and (max-width: 1024px){
+				#home-g .buttons a{
+					width:50%;
+				}
+				.mdl-grid .mdl-cell{
+					width:100%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-drawer-button">
+			<header class="mdl-layout__header" id="header">
+				<div class="mdl-layout-icon"></div>
+				<div class="mdl-layout__header-row">
+					<span class="mdl-layout__title">Tableau de bord</span>
+					<div class="mdl-layout-spacer"></div>
+				</div>
+			</header>
+			<main class="mdl-layout__content" id="home-g">
+				<div class="buttons">
+					<a href="#" class="mdl-js-ripple-effect">
+						<div class="icon"><img src="https://placehold.it/64x64"></div>
+						<span class="text">Profil</span>
+						<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+					</a>
+					<a href="#" class="mdl-js-ripple-effect">
+						<div class="icon">🏪</div>
+						<span class="text">Partenaires locaux</span>
+						<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+					</a>
+					<a href="#" class="mdl-js-ripple-effect">
+						<div class="icon">👵</div>
+						<span class="text">Communautée résidentielle</span>
+						<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+					</a>
+					<a href="#" class="mdl-js-ripple-effect">
+						<div class="icon">📝</div>
+						<span class="text">Options</span>
+						<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+					</a>
+				</div>
+				<div class="mdl-grid">
+					<div class="mdl-cell mdl-cell--6-col">
+						<h3>Bâtiment</h3>
+						<div class="mdl-card mdl-shadow--2dp">
+							<div class="mdl-card__title">
+								<h2 class="mdl-card__title-text">Monitoring</h2>
+							</div>
+							<div class="mdl-card__supporting-text mdl-card--border">
+								<strong>Portail :</strong> Fermé<br>
+								<strong>Porte principale :</strong> Fermée
+							</div>
+							<div class="mdl-card__supporting-text mdl-card--border">
+								<strong>Consommation électrique :</strong> 10kW/h<br>
+								<strong>Consommation d'eau :</strong> 100m³/h
+							</div>
+						</div>
+						<div class="mdl-card mdl-shadow--2dp">
+							<div class="mdl-card__title">
+								<h2 class="mdl-card__title-text">Logistique</h2>
+							</div>
+							<div class="mdl-card__supporting-text mdl-card--border">
+								<strong>Lundi 21 Novembre :</strong> Livraison de nouvelles fenêtres à 8h00.
+							</div>
+							<div class="mdl-card__supporting-text mdl-card--border">
+								<strong>Capacité vide-ordures :</strong> 30%<br>
+								<strong>Prochain passage des éboueurs :</strong> Mercredi 23 Novembre, 7h00
+							</div>
+						</div>
+						<div class="mdl-card mdl-shadow--2dp">
+							<div class="mdl-card__title">
+								<h2 class="mdl-card__title-text">Sécurité</h2>
+							</div>
+							<div class="mdl-card__supporting-text mdl-card--border">
+								<strong>Alarme incendie :</strong> OK<br>
+								<strong>Verouillage des portes :</strong> OK<br>
+								<strong>Fermeture auto des volets :</strong> OK
+							</div>
+							<div class="mdl-card__actions mdl-card--border">
+								<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Lancer un entraînement</a></div>
+						</div>
+					</div>
+					<div class="mdl-cell mdl-cell--6-col">
+						<h3>Veille sociale</h3>
+						<div class="mdl-card mdl-shadow--2dp alerts red">
+							<div class="mdl-card__title">
+								<h2 class="mdl-card__title-text">Alertes</h2>
+							</div>
+							<a href="#" class="mdl-card__supporting-text mdl-card--border mdl-js-ripple-effect">
+								<img src="/img/avatar-2.png">
+								<div class="wrap">
+									<h3>Suzanne</h3>
+									<p>Pas de nouvelles de Suzanne depuis Mardi</p>
+								</div>
+								<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+							</a>
+							<a href="#" class="mdl-card__supporting-text mdl-card--border mdl-js-ripple-effect">
+								<img src="/img/avatar-1.png">
+								<div class="wrap">
+									<h3>Michel</h3>
+									<p>N'est pas venu au club lecture Jeudi</p>
+								</div>
+								<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+							</a>
+						</div>
+						<div class="mdl-card mdl-shadow--2dp alerts orange">
+							<div class="mdl-card__title">
+								<h2 class="mdl-card__title-text">Attention</h2>
+							</div>
+							<a href="#" class="mdl-card__supporting-text mdl-card--border mdl-js-ripple-effect">
+								<img src="/img/avatar-3.png">
+								<div class="wrap">
+									<h3>Roger</h3>
+									<p>Le son de sa télé dérange les voisins</p>
+								</div>
+								<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+							</a>
+							<a href="#" class="mdl-card__supporting-text mdl-card--border mdl-js-ripple-effect">
+								<img src="http://placehold.it/64x64">
+								<div class="wrap">
+									<h3>Malika</h3>
+									<p>Visite de sa famille ce week-end</p>
+								</div>
+								<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+							</a>
+						</div>
+						<div class="mdl-card mdl-shadow--2dp alerts">
+							<div class="mdl-card__title">
+								<h2 class="mdl-card__title-text">Résidents actifs</h2>
+							</div>
+							<a href="#" class="mdl-card__supporting-text mdl-card--border mdl-js-ripple-effect">
+								<img src="/img/avatar-2.png">
+								<div class="wrap">
+									<h3>Suzanne</h3>
+								</div>
+								<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+							</a>
+							<a href="#" class="mdl-card__supporting-text mdl-card--border mdl-js-ripple-effect">
+								<img src="http://placehold.it/64x64">
+								<div class="wrap">
+									<h3>Malika</h3>
+								</div>
+								<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+		<script type="text/javascript" src="/mdl/material.js"></script>
+	</body>
+</html>
